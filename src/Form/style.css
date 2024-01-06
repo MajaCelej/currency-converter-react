@@ -37,27 +37,3 @@
 .form__field:hover {
     background-color: #fda487;
 }
-
-.form__button {
-    background-color: #ff8c66;
-    max-width: 100px;
-    width: 100%;
-    border: 2px solid #474747;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 10px;
-}
-
-.form__button:hover {
-    background-color: #fe774a;
-}
-
-.form__button:active {
-    background-color: #ff602b;
-}
-
-.form__textField {
-    background-color: #feb69e;
-    border: #000000 solid 1px;
-    text-align: center;
-}
