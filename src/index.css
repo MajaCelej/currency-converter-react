@@ -11,3 +11,12 @@ body {
   background-image: url("./360_F_357201360_S3j3ygHsJGKmKcdgcYVMV7jXpdYLmnS4.jpg");
   background-position: center;
 }
+
+.form {
+  margin: 15px;
+  background-color: #ffffff;
+  border: 2px solid #474747;
+  padding: 20px;
+  display: grid;
+  grid-row-gap: 10px;
+}
