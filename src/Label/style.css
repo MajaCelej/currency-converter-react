@@ -1,0 +1,7 @@
+.labelText {
+    max-width: 150px;
+    width: 100%;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: inherit;
+}
