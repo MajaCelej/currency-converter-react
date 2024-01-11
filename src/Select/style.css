@@ -1,0 +1,16 @@
+.input__field {
+    max-width: 300px;
+    width: 100%;
+    border-style: solid;
+    background-color: #feb69e;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.input__field:read-only {
+    background-color: #fda487;
+}
+
+.input__field:hover {
+    background-color: #fda487;
+}
