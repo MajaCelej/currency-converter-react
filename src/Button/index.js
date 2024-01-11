@@ -1,10 +1,12 @@
 import "./style.css";
 
 
-const Button = () => (
-    <p>
-        <button className="button">Przelicz</button>
-    </p>
+const Button = ({ calculateResult, resetForm }) => (
+    <>
+        <button className="button" onClick={calculateResult}>
+            Przelicz
+        </button>
+    </>
 );
 
 export default Button;
