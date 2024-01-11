@@ -1,9 +1,10 @@
+import React, { useState } from "react";
 import "./style.css";
 
-const Outcome = () => (
+const Outcome = ({result, setResult}) => (
     <section className="outcome__textField">
         <p>
-            Kwota w PLN: <strong className="js-result outcome"></strong>
+            Kwota w PLN: <strong>{result}</strong>
         </p>
     </section>
 );
