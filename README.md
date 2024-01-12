@@ -1,12 +1,22 @@
 # Currency converter
-## Demo version
-https://majacelej.github.io/currencyConverter/
+## Website adress
+https://majacelej.github.io/currency-converter-react/
+
+![Screenshot strony](https://github.com/MajaCelej/currency-converter-react/blob/main/src/currency-ss.png?raw=true)
+
 ### Description
-This is a website that you can use to convert an amount of money in EUR, CHF or CZK to PLN. You have to enter the amount in the field and click the button to calculate the money.
+This is a website that you can use to convert an amount of money in EUR, CHF or CZK to PLN. You have to enter the amount in the field, choose the currency and click the button to calculate the money.
 #### Used in the project:
-- HTMl
-- CSS with BEM convention
-- JavaScript
+ - HTML,
+ - CSS:
+    - normalize.css,
+    - transition,
+    - BEM,
+    - Flex, Grid
+ - JS, React:
+    - useState,
+    - React Hooks,
+    - immutability Concept
 
 ### `npm test`
 
