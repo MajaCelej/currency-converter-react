@@ -1,18 +1,12 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Currency converter
+## Demo version
+https://majacelej.github.io/currencyConverter/
+### Description
+This is a website that you can use to convert an amount of money in EUR, CHF or CZK to PLN. You have to enter the amount in the field and click the button to calculate the money.
+#### Used in the project:
+- HTMl
+- CSS with BEM convention
+- JavaScript
 
 ### `npm test`
 
