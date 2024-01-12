@@ -9,9 +9,9 @@ import { useState } from "react";
 
 function App() {
   const currencies = [
-    { id: 1, name: "Euro", symbol: "EUR", rate: 4.43 },
-    { id: 2, name: "Frank Szwajcarski", symbol: "CHF", rate: 4.65},
-    { id: 3, name: "Korona Czeska", symbol: "CZK", rate: 0.18 },
+    { id: 1, name: "Euro", symbol: "EUR", rate: 4.34 },
+    { id: 2, name: "Frank Szwajcarski", symbol: "CHF", rate: 4.64},
+    { id: 3, name: "Korona Czeska", symbol: "CZK", rate: 0.17 },
   ];
 
   const [currency, setCurrency] = useState(currencies[0].name);
