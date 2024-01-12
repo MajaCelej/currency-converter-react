@@ -19,4 +19,6 @@ body {
   padding: 20px;
   display: grid;
   grid-row-gap: 10px;
+  width: 100%;
+  align-self: center;
 }
