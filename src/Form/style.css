@@ -30,8 +30,8 @@
     background-color: #fda487;
 }
 
-.form__labelText {
-    font-size: inherit;
+.form__label {
+    padding-right: 15px;
 }
 
 .form__select {

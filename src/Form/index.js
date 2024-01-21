@@ -17,7 +17,7 @@ const Form = ({ calculateResult, amount, setAmount, setCurrency, currency }) => 
        />
     </div>
     <div>
-        <label className="form__labelText">
+        <label className="form__label">
             <span>Waluta:</span>
         </label>
         <select
