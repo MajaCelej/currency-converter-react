@@ -7,7 +7,7 @@ const Form = ({ calculateResult, amount, setAmount, setCurrency, currency }) => 
             <span>Kwota:</span>
         </label>
         <input
-            className="input__field"
+            className="form__inputField"
             type="number"
             name="amount"
             step="0.1"
@@ -17,11 +17,12 @@ const Form = ({ calculateResult, amount, setAmount, setCurrency, currency }) => 
        />
     </div>
     <div>
-        <label className="labelText">
-            <span>Waluta</span>
+        <label className="form__labelText">
+            <span>Waluta:</span>
         </label>
         <select
-            select="input__field"
+            className="form__select"
+            select="form__inputField"
             value={currency}
             onChange={(event) => setCurrency(event.target.value)}
         >
@@ -30,7 +31,7 @@ const Form = ({ calculateResult, amount, setAmount, setCurrency, currency }) => 
           <option>Korona Czeska</option>
         </select>
     </div>
-    <button className="button" onClick={calculateResult}>
+    <button className="form__button" onClick={calculateResult}>
       Przelicz
     </button>
   </form>

@@ -1,4 +1,4 @@
-.button {
+.form__button {
     background-color: #ff8c66;
     height: 50px;
     border: 2px solid #474747;
@@ -8,16 +8,16 @@
     transition: 1s;
 }
 
-.button:hover {
+.form__button:hover {
     background-color: #fe774a;
     transform: scale(1.05);
 }
 
-.button:active {
+.form__button:active {
     background-color: #ff602b;
 }
 
-.input__field {
+.form__inputField {
     max-width: 300px;
     width: 100%;
     border-style: solid;
@@ -26,14 +26,23 @@
     padding: 5px;
 }
 
-.input__field:hover {
+.form__inputField:hover {
     background-color: #fda487;
 }
 
-.labelText {
-    max-width: 150px;
-    width: 100%;
-    display: inline-block;
-    padding-right: 15px;
+.form__labelText {
     font-size: inherit;
+}
+
+.form__select {
+    max-width: 300px;
+    width: 100%;
+    border-style: solid;
+    background-color: #feb69e;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.form__select:hover {
+    background-color: #fda487;
 }
