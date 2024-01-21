@@ -24,10 +24,12 @@ function App() {
     const selectedCurrency = currencies.find(({ name }) => name === currency);
 
     if (!selectedCurrency) {
-      console.error("Currency not found");
+      console.error("Currency not found")
       return;
-    } else {
-      setResult(amount * selectedCurrency.rate);
+    } 
+    
+    else {
+      setResult(amount * selectedCurrency.rate)
     }
   };
 
@@ -47,6 +49,6 @@ function App() {
       <Outcome result={result} />
     </Container>
   );
-}
+};
 
 export default App;
