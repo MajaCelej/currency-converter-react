@@ -20,15 +20,17 @@ const Clock = () => {
     });
 
     useEffect(() => {
-     const intervalId = setInterval(() => {
-       setDate(new Date());
-     }, 1000);
+        const intervalId = setInterval(() => {
+            setDate(new Date());
+        }, 1000);
    
-     return () => clearInterval(intervalId)
+        return () => {
+            clearInterval(intervalId)
+        };
     }, []);
 
     return (
-        <div>Dzisiejsza data: {currentDate}, {currentHour} </div>
+        <div className="clock">Dzisiejsza data: {currentDate}, {currentHour} </div>
     )
 };
 
