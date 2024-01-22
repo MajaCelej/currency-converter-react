@@ -1,7 +1,7 @@
 import "./style.css";
 
-const Form = ({ calculateResult, amount, setAmount, setCurrency, currency }) => (
-  <form className="form">
+const Form = ({ calculateResult, amount, setAmount, setCurrency, currency, onFormSubmit }) => (
+  <form className="form" onSubmit={onFormSubmit}>
     <div>
         <label className="form__label">
             <span>Kwota:</span>
