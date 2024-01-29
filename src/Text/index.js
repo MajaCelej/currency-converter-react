@@ -1,9 +1,9 @@
-import "./style.css";
+import { TextField } from "./styled";
 
 const Text = () => (
-    <div className="textField">
+    <TextField>
         <h1>Kalkulator walut</h1>
-    </div>
+    </TextField>
 );
 
 export default Text;
