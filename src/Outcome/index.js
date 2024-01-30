@@ -1,12 +1,12 @@
 import React from "react";
-import "./style.css";
+import { Wrapper } from "./styled";
 
 const Outcome = ({result, setResult}) => (
-    <section className="outcome__textField">
+    <Wrapper>
         <p>
             Kwota w PLN: <strong>{result}</strong>
         </p>
-    </section>
+    </Wrapper>
 );
 
 export default Outcome;
