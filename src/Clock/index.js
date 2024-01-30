@@ -1,4 +1,4 @@
-import "./style.css";
+import { Timer } from "./styled";
 import { useState, useEffect } from "react";
 
 const Clock = () => {
@@ -30,7 +30,9 @@ const Clock = () => {
     }, []);
 
     return (
-        <div className="clock">Dzisiejsza data: {currentDate}, {currentHour} </div>
+        <Timer>
+            Dzisiejsza data: {currentDate}, {currentHour} 
+        </Timer>
     )
 };
 
