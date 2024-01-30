@@ -1,13 +1,12 @@
-import "./style.css";
+import { StyledForm, Label, Input, Select, Button } from "./styled";
 
 const Form = ({ calculateResult, amount, setAmount, setCurrency, currency, onFormSubmit }) => (
-  <form className="form" onSubmit={onFormSubmit}>
+  <StyledForm onSubmit={onFormSubmit}>
     <div>
-        <label className="form__label">
+        <Label>
             <span>Kwota:</span>
-        </label>
-        <input
-            className="form__inputField"
+        </Label>
+        <Input
             type="number"
             name="amount"
             step="0.1"
@@ -17,24 +16,22 @@ const Form = ({ calculateResult, amount, setAmount, setCurrency, currency, onFor
        />
     </div>
     <div>
-        <label className="form__label">
+        <Label>
             <span>Waluta:</span>
-        </label>
-        <select
-            className="form__select"
-            select="form__inputField"
+        </Label>
+        <Select
             value={currency}
             onChange={(event) => setCurrency(event.target.value)}
         >
           <option>Euro</option>
           <option>Frank Szwajcarski</option>
           <option>Korona Czeska</option>
-        </select>
+        </Select>
     </div>
-    <button className="form__button" onClick={calculateResult}>
+    <Button onClick={calculateResult}>
       Przelicz
-    </button>
-  </form>
+    </Button>
+  </StyledForm>
 );
 
 export default Form;
