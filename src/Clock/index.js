@@ -1,37 +1,22 @@
 import { Timer } from "./styled";
-import { useState, useEffect } from "react";
+import { useCurrentDate } from "./useCurrentDate";
 
 const Clock = () => {
 
-    const [date, setDate] = useState();
-
-    const time = new Date()
-    const currentDate = time.toLocaleString("pl",  {
+    const formatDate = (date) => date.toLocaleString(undefined, {
         weekday: "long",
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-    });
-
-    const currentHour = time.toLocaleString({
         hour: "numeric",
         minute: "numeric",
         second: "numeric",
+        day: "numeric",
+        month: "long",
     });
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setDate(new Date());
-        }, 1000);
-   
-        return () => {
-            clearInterval(intervalId)
-        };
-    }, []);
+    const date = useCurrentDate();
 
     return (
         <Timer>
-            Dzisiejsza data: {currentDate}, {currentHour} 
+            Dzisiejsza data: {formatDate(date)}
         </Timer>
     )
 };
