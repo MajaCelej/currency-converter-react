@@ -4,8 +4,6 @@ import Form from "./Form";
 import Outcome from "./Outcome";
 import Clock from "./Clock";
 import { useState } from "react";
-import { ThemeProvider } from "styled-components";
-import { theme } from "./theme";
 
 function App() {
   const currencies = [
@@ -36,7 +34,6 @@ function App() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
     <Container>
       <Text />
       <Clock />
@@ -51,7 +48,6 @@ function App() {
       />
       <Outcome result={result} />
     </Container>
-    </ThemeProvider>
   );
 };
 
