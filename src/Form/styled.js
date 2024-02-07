@@ -53,9 +53,14 @@ export const Button = styled.button`
     &:hover {
         background-color: ${(props) => props.theme.color.coral};
         transform: scale(1.05);
-    };
+    }
 
     &:active {
         background-color: ${(props) => props.theme.color.orangeish};
-    };
+    }
 `;
+
+export const Loading = styled.p``;
+
+
+export const Failure = styled.p``;
