@@ -1,9 +1,8 @@
 import { Wrapper } from "./styled";
 
-const Container = ({children}) => (
+const Container = ({ children }) => 
     <Wrapper>
         {children}
-    </Wrapper>
-);
+    </Wrapper>;
 
 export default Container;
