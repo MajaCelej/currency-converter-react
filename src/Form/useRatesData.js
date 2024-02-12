@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { fetchRatesData } from "./URL";
 
 export const useRatesData = () => {
 	const [ratesData, setRatesData] = useState({
@@ -7,26 +8,21 @@ export const useRatesData = () => {
 
 	const getCurrenciesRates = async () => {
 		try {
-			const response = await fetch("https://api.currencyapi.com/v3/status?apikey=cur_live_HoaLsFNB0Z18fvXaJGCdbPFmU5eeDwjGtdB7e0E9");
-
-			if (!response.ok) {
-				throw new Error(response.statusText);
-			}
-
-			const { rates, data } = await response.json();
+			const { meta, data} = await fetchRatesData();
 
 			setRatesData({
 				state: "success",
-				rates,
+				meta,
 				data,
 			});
+
 		} catch (error) {
 			setRatesData({ state: "error" });
 		}
 	};
 
 	useEffect(() => {
-		setTimeout(getCurrenciesRates, 2000);
+		setTimeout(getCurrenciesRates, 1000);
 	}, []);
 
 	return ratesData;
