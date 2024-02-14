@@ -1,4 +1,5 @@
 import Outcome from "./Outcome";
+import Adnotation from "./Adnotation";
 import { StyledForm, Label, Input, Select, Button, Loading, Failure } from "./styled";
 import { useRatesData } from "./useRatesData";
 import { useState } from "react";
@@ -74,6 +75,7 @@ export const Form = () => {
 							))}
 						</Select>
 					</div>
+					<Adnotation />
 					<Button onClick={calculateResult}>Przelicz</Button>
 					<Outcome result={result}/>
 				</>
