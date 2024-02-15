@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { fetchRatesData } from "./URL";
+import { fetchRatesData } from "./fetchRatesData.js";
 
 export const useRatesData = () => {
 	const [ratesData, setRatesData] = useState({
-		state: "loading",
+		status: "loading",
 	});
 
 	const getCurrenciesRates = async () => {
@@ -11,13 +11,13 @@ export const useRatesData = () => {
 			const { meta, data} = await fetchRatesData();
 
 			setRatesData({
-				state: "success",
+				status: "success",
 				meta,
 				data,
 			});
 
 		} catch (error) {
-			setRatesData({ state: "error" });
+			setRatesData({ status: "error" });
 		}
 	};
 
