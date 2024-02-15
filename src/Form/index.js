@@ -16,9 +16,8 @@ export const Form = () => {
 	};
 
 	const calculateResult = (currency, amount) => {
-		// Sprawdzenie, czy ratesData.data ma właściwość o nazwie `currency` oraz czy ta właściwość ma właściwość 'value'
 	    if  (ratesData.data && ratesData.data[currency] && ratesData.data[currency].value) {
-			const rate = ratesData.data[currency].value;
+		const rate = ratesData.data[currency].value;
 
 			setResult({
 				sourceAmount: +amount,
@@ -33,14 +32,13 @@ export const Form = () => {
 
 	return (
 		<StyledForm onSubmit={onFormSubmit}>
-			{ratesData.state === "loading" ? (
+			{ratesData.status === "loading" ? (
 				<Loading>Chwilka... Ładuję kursy walut.</Loading>
-			) : ratesData.state === "error" ? (
+			) : ratesData.status === "error" ? (
 				<Failure>
 					Coś poszło nie tak!
 					<br />
 					Sprawdź swoje połączenie z internetem.
-					<br />
 					Jeśli masz wina leży po naszej stronie. Prosimy o cierpliwośc. Spróbuj ponownie za kilka minut!
 				</Failure>
 			) : (
