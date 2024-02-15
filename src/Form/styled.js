@@ -9,6 +9,7 @@ export const StyledForm = styled.form`
 	grid-row-gap: 10px;
 	width: 100%;
 	align-self: center;
+	height: 270px;
 `;
 
 export const Label = styled.label`
@@ -62,8 +63,12 @@ export const Button = styled.button`
 
 export const Loading = styled.p`
 	text-align: center;
+	padding-top: 70px;
+	height: 270px;
 `;
 
 export const Failure = styled.p`
 	text-align: center;
+	padding-top: 70px;
+	height: 270px;
 `;
